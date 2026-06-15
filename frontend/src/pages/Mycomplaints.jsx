@@ -74,7 +74,8 @@ function Mycomplaints() {
         
       };
   return (
-    <div className="min-h-screen bg-[#0f172a] text-gray-300">
+    //min-h-[calc(100vh-64px)]
+    <div className=" bg-[#0f172a] text-gray-300">
       <div className="w-full px-8 py-20">
 
         <h2 className="text-3xl font-bold text-white mb-8">
