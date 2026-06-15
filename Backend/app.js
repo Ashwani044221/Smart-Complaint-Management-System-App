@@ -16,7 +16,10 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: [
+    "http://localhost:5173",
+    "https://smart-complaint-management-system-a.vercel.app"
+  ],
   credentials: true
 }));
 app.use(express.json());
