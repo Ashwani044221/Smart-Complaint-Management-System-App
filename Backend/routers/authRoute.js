@@ -27,7 +27,12 @@ router.post("/signup", async (req, res) => {
         await newData.save();
         res.json({ message: "User registered successfully" });
     }catch(err){
-        res.status(400).json({ error: err.message });
+       // res.status(400).json({ error: err.message });
+       console.log("FULL ERROR:", err);
+  console.log("RESPONSE:", err.response);
+  console.log("DATA:", err.response?.data);
+
+  alert(JSON.stringify(err.response?.data));
     }
     
 });
