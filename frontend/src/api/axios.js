@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const API = axios.create({
-    baseURL: "http://localhost:5000",
-    withCredentials: true
+  baseURL: "https://smart-complaint-management-system-app.onrender.com",
+  withCredentials: true
 });
 
 export default API;
